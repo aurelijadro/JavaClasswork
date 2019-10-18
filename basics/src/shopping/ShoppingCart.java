@@ -2,16 +2,19 @@ package shopping;
 
 public class ShoppingCart {
 	
-	private ShoppingCartItems[] items = new ShoppingCartItems[3];
+	private AbstractProduct[] items = new  AbstractProduct[3];
+	private int counter =0;
 	
-	public void  add(ShoppingCartItems item) {
-		items[0]=item;
+	public void  add(AbstractProduct item) {
+		items[counter]=item;
+		counter++;
 	}
 	
 	public double getTotalPrice() {
-		for(ShoppingCartItems item : items) {
-			
+		double total =0;
+		for( AbstractProduct item : items) {
+			total+=item.getPriceWithVAT();
 		}
-		return 0;
+		return total;
 	}
 }

@@ -27,15 +27,14 @@ public class CharArrayToString {
 		return string.toLowerCase();
 	}
 
-//	public static char[] firstCharCapital(char[] chars) {
-//		String string = CharArrayToString.arrayToString(chars).toLowerCase();
-//
-//		char firstChar = chars[0];
-//		if (((int) (firstChar)) > 96 && ((int) (firstChar)) < 123) {
-//			firstChar = (char) ((int) (firstChar + 32));
-//		}
-//
-//	}
+	public static String firstCharCapital(char [] chars) {
+		StringBuilder newString = new StringBuilder();
+		for (char ch : chars) {
+			newString.append(ch);
+		}
+		String updatedString = newString.substring(0, 1).toUpperCase() + newString.substring(1);
+		return updatedString;
+	}
 	
 	public static String backwards(char[] chars) {
 		String newString = "";

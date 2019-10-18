@@ -13,6 +13,8 @@ public class Practice {
 		CharArrayToString.printString(CharArrayToString.toUpperCase(CharArrayToString.arrayToString(data)));
 
 		CharArrayToString.printString(CharArrayToString.backwards(data));
+		
+		CharArrayToString.printString(CharArrayToString.firstCharCapital(data));
 
 		String weirdString = ").cte ,iP yrrebpsaR ,xuniL ,caM ,swodniW( smroftalp tnereffid no skrow avaJ";
 		
@@ -50,7 +52,7 @@ public class Practice {
 		System.out.println(Palindrome.isPalindrome("Madam"));
 		MultiplicationTable.printMultiplicationTable();
 		Factorial.printFactorialValue();
-		//DayOfWeek.printDayOfWeek("2019-10-17");
+		DayOfWeek.printDayOfWeek("2019-10-17");
 	}
 
 }
