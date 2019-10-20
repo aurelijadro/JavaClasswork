@@ -6,8 +6,12 @@ public class Main {
 		Circle circle = new Circle(10, 0, 0);
 		Point point = new Point(10, 0);
 		System.out.println(point.toString());
-		point.moveDown();
-		System.out.println(point.toString());
+		System.out.println(CoordinateAxis.pointBelongsToCircle(point, circle));
+		CoordinateAxis.movePointDownInsideACircle(point, circle);
+		CoordinateAxis.movePointLeftInsideACircle(point, circle);
+		CoordinateAxis.movePointUpInsideACircle(point, circle);
+		CoordinateAxis.movePointRightInsideACircle(point, circle);
+		
 
 	}
 

@@ -1,6 +1,6 @@
 package interfaceExampleFour;
 
-public class Point implements Movable {
+public class Point extends CoordinateAxis implements Movable {
 
 	private int positionX;
 	private int positionY;

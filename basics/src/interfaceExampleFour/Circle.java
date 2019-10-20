@@ -1,6 +1,6 @@
 package interfaceExampleFour;
 
-public class Circle {
+public class Circle extends CoordinateAxis{
 	private int radius;
 	private int centerX;
 	private int centerY;
