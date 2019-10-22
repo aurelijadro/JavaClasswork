@@ -12,7 +12,8 @@ public class CoordinateAxis {
 	}
 	
 	public static void movePointUpInsideACircle(Point point, Circle circle) {
-		Point futurePoint = point;
+		Point futurePoint = new Point(point.getPositionX(), point.getPositionY());
+		futurePoint = point;
 		futurePoint.moveUp();
 		if (CoordinateAxis.pointBelongsToCircle(futurePoint, circle)) {
 			point.moveUp();
@@ -24,7 +25,8 @@ public class CoordinateAxis {
 	}
 	
 	public static void movePointDownInsideACircle(Point point, Circle circle) {
-		Point futurePoint = point;
+		Point futurePoint = new Point(0, 0);
+		futurePoint = point;
 		futurePoint.moveDown();
 		if (CoordinateAxis.pointBelongsToCircle(futurePoint, circle)) {
 			point.moveDown();
@@ -36,7 +38,8 @@ public class CoordinateAxis {
 	}
 	
 	public static void movePointRightInsideACircle(Point point, Circle circle) {
-		Point futurePoint = point;
+		Point futurePoint = new Point(0, 0);
+		futurePoint = point;
 		futurePoint.moveRight();
 		if (CoordinateAxis.pointBelongsToCircle(futurePoint, circle)) {
 			point.moveRight();
@@ -48,7 +51,8 @@ public class CoordinateAxis {
 	}
 	
 	public static void movePointLeftInsideACircle(Point point, Circle circle) {
-		Point futurePoint = point;
+		Point futurePoint = new Point(0, 0);
+		futurePoint = point;
 		futurePoint.moveLeft();
 		if (CoordinateAxis.pointBelongsToCircle(futurePoint, circle)) {
 			point.moveLeft();

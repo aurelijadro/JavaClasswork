@@ -8,8 +8,11 @@ public class Main {
 		System.out.println(point.toString());
 		System.out.println(CoordinateAxis.pointBelongsToCircle(point, circle));
 		CoordinateAxis.movePointDownInsideACircle(point, circle);
+		System.out.println(point.toString());
 		CoordinateAxis.movePointLeftInsideACircle(point, circle);
+		System.out.println(point.toString());
 		CoordinateAxis.movePointUpInsideACircle(point, circle);
+		System.out.println(point.toString());
 		CoordinateAxis.movePointRightInsideACircle(point, circle);
 		
 
