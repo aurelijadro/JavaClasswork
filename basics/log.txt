@@ -1,0 +1,9 @@
+Info message
+Error message
+java.lang.Exception: Error message
+	at logging.JavaLogging.loggerOne(JavaLogging.java:35)
+	at logging.JavaLogging.main(JavaLogging.java:15)
+Nov 15, 2019 1:03:15 PM logging.JavaLogging loggerTwo
+WARNING: It's almost weekend!
+Nov 15, 2019 1:03:15 PM logging.JavaLogging loggerTwo
+INFO: Weather forecast for the week is ....
